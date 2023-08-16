@@ -109,7 +109,73 @@
     </section>
     <section id="pukeko">
         <div class="parallax-pukeko">
+            <section id="pukeko-carousel">
+                <div class="slideshow-containerp">
 
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlidesp fadep">
+                        <div class="numbertextp">1 / 4</div>
+                        <img src="img/pukeko/adult_bedroom_thumb.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlidesp fadep">
+                        <div class="numbertextp">2 / 4</div>
+                        <img src="img/pukeko/bathroom_thumb.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlidesp fadep">
+                        <div class="numbertextp">3 / 4</div>
+                        <img src="img/pukeko/chalet_exterior_thumb.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlidesp fadep">
+                        <div class="numbertextp">4 / 4</div>
+                        <img src="img/pukeko/chalet_view_thumb.jpg" style="width:100%">
+                    </div>
+                
+                <!-- Next and previous buttons -->
+                    <a class="prevp" onclick="plusSlidesp(-1)">&#10094;</a>
+                    <a class="nextp" onclick="plusSlidesp(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div class="dotsp">
+                    <span class="dotp" onclick="currentSlidep(1)"></span>
+                    <span class="dotp" onclick="currentSlidep(2)"></span>
+                    <span class="dotp" onclick="currentSlidep(3)"></span>
+                    <span class="dotp" onclick="currentSlidep(4)"></span>
+                </div>
+                <script>
+                let slideindexp=1
+                showSlidesp(slideindexp);
+                
+                // Next/previous controls
+                function plusSlidesp(n) {
+                showSlidesp(slideindexp += n);
+                }
+                
+                // Thumbnail image controls
+                function currentSlidep(n) {
+                showSlidesp(slideindexp = n);
+                }
+                
+                function showSlidesp(n) {
+                    let p;
+                    let slidesp = document.getElementsByClassName("mySlidesp");
+                    let dotsp = document.getElementsByClassName("dotp");
+                    if (n > slidesp.length) {slideindexp = 1}
+                    if (n < 1) {slideindexp = slidesp.length}
+                    for (p = 0; p < slidesp.length; p++) {
+                        slidesp[p].style.display = "none";
+                    }
+                    for (p = 0; p < dotsp.length; p++) {
+                        dotsp[p].className = dotsp[p].className.replace(" activep", "");
+                    }
+                    slidesp[slideindexp-1].style.display = "block";
+                    dotsp[slideindexp-1].className += " activep";
+                }
+                </script>
+            </section>
             <section id="pukeko-text">
                 <h1>Pukeko Chalet</h1>
                 <h2>Perched slopeside in alpine serenity, our Pukeko chalet blends rustic charm with modern indulgence. Relax by the fireplace while panoramic windows frame nature's grandeur. Gourmet kitchen, luxurious bedrooms, and spa-like amenities provide the ultimate retreat. Ski from your door, explore quaint villages, and savor the perfect mountain escape in our inviting Puekeo chalet.</h2>
@@ -118,7 +184,74 @@
         </div>
     </section>
     <section id="kereru">
-        <div class="parallax-kereru">  
+        <div class="parallax-kereru">
+            <section id="kereru-carousel">
+                    <div class="slideshow-containerk">
+    
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlidesk fadek">
+                            <div class="numbertextk">1 / 4</div>
+                            <img src="img/kereru/kitchen_thumb.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlidesk fadek">
+                            <div class="numbertextk">2 / 4</div>
+                            <img src="img/kereru/kids_bedroom_thumb.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlidesk fadek">
+                            <div class="numbertextk">3 / 4</div>
+                            <img src="img/kereru/cabin_exterior_thumb.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlidesk fadek">
+                            <div class="numbertextk">4 / 4</div>
+                            <img src="img/kereru/adult_bedroom_thumb.jpg" style="width:100%">
+                        </div>
+                    
+                    <!-- Next and previous buttons -->
+                        <a class="prevk" onclick="plusSlidesk(-1)">&#10094;</a>
+                        <a class="nextk" onclick="plusSlidesk(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div class="dotsk">
+                        <span class="dotk" onclick="currentSlidek(1)"></span>
+                        <span class="dotk" onclick="currentSlidek(2)"></span>
+                        <span class="dotk" onclick="currentSlidek(3)"></span>
+                        <span class="dotk" onclick="currentSlidek(4)"></span>
+                    </div>
+                    <script>
+                    let slideindexk=1
+                    showSlidesk(slideindexk);
+                    
+                    // Next/previous controls
+                    function plusSlidesk(n) {
+                    showSlidesk(slideindexk += n);
+                    }
+                    
+                    // Thumbnail image controls
+                    function currentSlidek(n) {
+                    showSlidesk(slideindexk = n);
+                    }
+                    
+                    function showSlidesk(n) {
+                        let k;
+                        let slidesk = document.getElementsByClassName("mySlidesk");
+                        let dotsk = document.getElementsByClassName("dotk");
+                        if (n > slidesk.length) {slideindexk = 1}
+                        if (n < 1) {slideindexk = slidesk.length}
+                        for (k = 0; k < slidesk.length; k++) {
+                            slidesk[k].style.display = "none";
+                        }
+                        for (k = 0; k < dotsk.length; k++) {
+                            dotsk[k].className = dotsk[k].className.replace(" activek", "");
+                        }
+                        slidesk[slideindexk-1].style.display = "block";
+                        dotsk[slideindexk-1].className += " activek";
+                    }
+                    </script>
+            </section>
             <section>
                 <h1>Kereru Chalet</h1>
                 <h2>Welcome to our exquisite Kereru chalet, where alpine beauty meets luxury living. With its rustic yet elegant design, this slopeside retreat offers panoramic mountain views through expansive windows. Indulge in the gourmet kitchen, unwind in cozy bedrooms, and rejuvenate in the private hot tub and sauna. Ski-in/ski-out convenience and nearby village charm make this chalet a gateway to both adventure and relaxation. Experience the pinnacle of mountain living in our captivating Kereru chalet.</h2>
@@ -127,11 +260,112 @@
     </section>
     <section id="book">
         <div class="parallax-book">  
-
+            <section>
+                <form action="reservation.php" method="post">
+                    <div class="elem-group">
+                        <label for="name">Your Name</label>
+                        <input
+                        type="text"
+                        id="name"
+                        name="visitor name"
+                        placeholder="Full name"
+                        pattern="[A-Z\sa-z](1,20)"
+                        required
+                        />
+                    </div> 
+                    <div class="elem-group">
+                        <label for="email">Your E-mail</label> 
+                        <input
+                            type="email" 
+                            id="email" 
+                            name="visitor_email" 
+                            placeholder="youremail@email.com"       
+                            required
+                        />
+                    </div> 
+                    <div class="elem-group">
+                        <label for="phone">Your phone</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="visitor_phone"
+                            placeholder="123-456-7890"
+                            pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+                            required
+                        />
+                    </div> 
+                    <hr />
+                    <div class="elem-group inlined"> 
+                        <label for="adult ">Adults</label>
+                        <input
+                            type="number"
+                            id="adult"
+                            name="total adults" 
+                            placeholder="how many"
+                            min="1"
+                            required
+                        />
+                    </div>
+                    <div class="elem-group inlined">
+                        <label for="child">children</label>
+                        <input
+                            type="number"
+                            id="child"
+                            name="total_children"
+                            placeholder="how many"
+                            min="0"
+                            required
+                        />
+                        <div class="elem-group inlined"> 
+                            <label for="child-age">child(s) age</label>
+                            <input 
+                                type="number" 
+                                id="child" 
+                                name="total children" 
+                                placeholder="age" 
+                                min="0" 
+                                max="12" 
+                                required
+                            />
+                            <div class="elem-group inlined"> 
+                                <label for="child">adult(s) age</label> 
+                                <input 
+                                    type="number" 
+                                    id="child" 
+                                    name="adult_age" 
+                                    placeholder="age"
+                                    min="13"
+                                    max="100" 
+                                    required
+                                />
+                            </div>
+                            <div class="elem-group inlined">                
+                                <label for="checkin-date"> booking date</label>
+                                <input type="date" id="checkin-date" name="checkin-date">
+                            </div> 
+                        </div> 
+                        <div class="elem-group"> 
+                            <label for="room-selection"
+                                >Select where you're gonna jump from</label
+                            >
+                            <select id="room-selection" name="room_preference" required>
+                                <option value="tower">tower</option>
+                                <option value="canyon">canyon</option>
+                                <option value="bridge">bridge</options> 
+                            </select>
+                        </div> 
+                        <hr /> 
+                    </div>
+                    <button type="submit">BOOK NOW</button> 
+                </form>    
+            </section>
         </div>
     </section>
     <section id="membership">
         <div class="parallax-membership">  
+            <section>
+                <h2>Welcome to our exclusive Maunga Membership community, where passion for the slopes and a love for refined living converge. As a member, you'll gain privileged access to a world of exceptional benefits and experiences. From priority bookings at our luxurious ski chalet to curated events that celebrate the alpine lifestyle, your membership opens doors to unforgettable moments. Join a community of like-minded enthusiasts who share your appreciation for adventure and relaxation in equal measure. Elevate your mountain experience with our Maunga Membership and embrace a new level of alpine indulgence.</h2>
+            </section>
         </div>    
     </section>
     <section id="contact">
