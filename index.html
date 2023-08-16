@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
@@ -23,51 +22,123 @@
                 <li><a href="#contact">CONTACT US</a></li>
             </ul>
         </nav>
-     </header>
+    </header>
     <section id="home">
         <div class="parallax-home">  
             <section id="home-text">
                 <h1>Maunga Club</h1>
                 <h2>Ski Resort | Chalets | Private Ski Trails</h2>
             </section>
-            
         </div>
     </section>
     <section id="kakapo">
         <div class="parallax-kakapo">
             <section id="kakapo-carousel">
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/kakapo/bunk_room_thumb.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/kakapo/cabin_exterior_thumb.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/kakapo/cabin_view_thumb.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/kakapo/hallway_thumb.jpg" style="width:100%">
+                    </div>
+                
+                <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <script>
+                let slideindex = 1;
+                showSlides(slideindex);
+                
+                // Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideindex += n);
+                }
+                
+                // Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideindex = n);
+                }
+                
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideindex = 1}
+                    if (n < 1) {slideindex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideindex-1].style.display = "block";
+                    dots[slideindex-1].className += " active";
+                }
+                </script>
+
+            </section>
+            <section id="kakapo-text">
+                <h1>Kakapo Chalet</h1>
+                <h2>Nestled in the heart of the alpine wilderness, our Kakapo chalet is a haven of rustic luxury. A cozy fireplace and floor-to-ceiling windows reveal stunning mountain vistas. The gourmet kitchen and spacious deck invite shared moments, while bedrooms offer comfort and style. Recharge in the outdoor hot tub or unwind in the sauna. Ski-in/ski-out convenience ensures adventure at your doorstep, with charming villages nearby. Discover the perfect blend of mountain thrill and relaxation in our enchanting Kakapo chalet.</h2>
+            </section>
+        </div>
+    </section>
+    <section id="pukeko">
+        <div class="parallax-pukeko">
+
+            <section id="pukeko-text">
+                <h1>Pukeko Chalet</h1>
+                <h2>Perched slopeside in alpine serenity, our Pukeko chalet blends rustic charm with modern indulgence. Relax by the fireplace while panoramic windows frame nature's grandeur. Gourmet kitchen, luxurious bedrooms, and spa-like amenities provide the ultimate retreat. Ski from your door, explore quaint villages, and savor the perfect mountain escape in our inviting Puekeo chalet.</h2>
 
             </section>
         </div>
     </section>
-    
-    
-    <section id="pukeko">
-        <div class="parallax-pukeko">
-        </div>
-    </section>
-
-    
     <section id="kereru">
-        <div class="parallax-kereru">    
+        <div class="parallax-kereru">  
+            <section>
+                <h1>Kereru Chalet</h1>
+                <h2>Welcome to our exquisite Kereru chalet, where alpine beauty meets luxury living. With its rustic yet elegant design, this slopeside retreat offers panoramic mountain views through expansive windows. Indulge in the gourmet kitchen, unwind in cozy bedrooms, and rejuvenate in the private hot tub and sauna. Ski-in/ski-out convenience and nearby village charm make this chalet a gateway to both adventure and relaxation. Experience the pinnacle of mountain living in our captivating Kereru chalet.</h2>
+            </section>
         </div>
     </section>
-
-  
     <section id="book">
         <div class="parallax-book">  
+
         </div>
     </section>
-
-
     <section id="membership">
         <div class="parallax-membership">  
         </div>    
     </section>
-
-
     <section id="contact">
         <div class="parallax-contact">
+            <h2>We're here to connect and assist in every way possible. Whether you have inquiries about booking availability, special requests for your stay, or simply want to learn more about our ski chalet and the surrounding area, don't hesitate to get in touch. Our dedicated team is ready to provide you with prompt and personalized responses. Feel free to reach out via the provided contact form, email, or phone number, and we'll ensure your journey to our ski chalet is seamless and filled with anticipation. Your mountain escape starts with a conversation – let's make it a memorable one.</h2>
+            <h3>02212345678</h3>
+            <a href="mailto:customerservice@maungaclub.nz" class="button">Contact Us</a>
         </div>     
     </section>
 
