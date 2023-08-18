@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <title>Maunga Club</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/Maunga_Club_white.png" /></a>
+        <nav>
+            <ul> <!--<ul> and <li> tags adding during Section 3.1-->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">KAKAPO</a></li>
+                <li><a href="index.html">PUKEKO</a></li>
+                <li><a href="index.html">KERERU</a></li>
+                <li><a href="index.html">BOOK</a></li>
+                <li><a href="index.html">MEMBERSHIP</a></li>
+                <li><a href="index.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="form">
+        <form action="reservation.php" method="post">
+            <div class="elem-group">
+                <label for="name">Your Name</label>
+                <input
+                type="text"
+                id="name"
+                name="visitor name"
+                placeholder="Full name"
+                pattern="[A-Z\sa-z](1,20)"
+                required
+                />
+            </div> 
+            <div class="elem-group">
+                <label for="email">Your E-mail</label> 
+                <input
+                    type="email" 
+                    id="email" 
+                    name="visitor_email" 
+                    placeholder="youremail@email.com"       
+                    required
+                />
+            </div> 
+            <div class="elem-group">
+                <label for="phone">Your phone</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="visitor_phone"
+                    placeholder="123-456-7890"
+                    pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+                    required
+                />
+            </div> 
+            <hr />
+            <div class="elem-group inlined"> 
+                <label for="adult ">Adults</label>
+                <input
+                    type="number"
+                    id="adult"
+                    name="total adults" 
+                    placeholder="how many"
+                    min="1"
+                    required
+                />
+            </div>
+            <div class="elem-group inlined">
+                <label for="child">children</label>
+                <input
+                    type="number"
+                    id="child"
+                    name="total_children"
+                    placeholder="how many"
+                    min="0"
+                    required
+                />
+                <div class="elem-group inlined"> 
+                    <label for="child-age">child(s) age</label>
+                    <input 
+                        type="number" 
+                        id="child" 
+                        name="total children" 
+                        placeholder="age" 
+                        min="0" 
+                        max="12" 
+                        required
+                    />
+                    <div class="elem-group inlined"> 
+                        <label for="child">adult(s) age</label> 
+                        <input 
+                            type="number" 
+                            id="child" 
+                            name="adult_age" 
+                            placeholder="age"
+                            min="13"
+                            max="100" 
+                            required
+                        />
+                    </div>
+                    <div class="elem-group inlined">                
+                        <label for="checkin-date"> booking date</label>
+                        <input type="date" id="checkin-date" name="checkin-date">
+                    </div> 
+                </div> 
+                <div class="elem-group"> 
+                    <label for="room-selection"
+                        >Select where you're gonna jump from</label
+                    >
+                    <select id="room-selection" name="room_preference" required>
+                        <option value="kakapo">Kakapo</option>
+                        <option value="pukeko">Pukeko</option>
+                        <option value="kereru">Kereru</options> 
+                    </select>
+                </div> 
+                <hr /> 
+            </div>
+            <button type="submit">BOOK NOW</button> 
+        </form>    
+    </section>
+</body>
+</html>

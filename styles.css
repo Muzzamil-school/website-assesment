@@ -95,6 +95,7 @@ a:hover {
 }
 .slideshow-container {
     max-width: 500px;
+    height: 300px;
     position: relative;
     margin: 0;
     z-index: 950;
@@ -144,6 +145,7 @@ a:hover {
 .dots {
     width: 442.5px;
     margin: 0;
+    padding-bottom: 100px;
 }
 .active, .dot:hover {
     background-color: #717171;
@@ -207,6 +209,11 @@ h2 {
     border: 3px solid white; 
     min-width: 150px; 
     text-decoration: none;
+    text-shadow: 0px 0px 10px #000,
+				  10px 5px 10px #000,
+				  0px 0px 0 #000,
+				  0px 0px 0 #000;
+    outline: 0.5px solid black;
 }
 .slideshow-containerp {
     max-width: 500px;
@@ -259,6 +266,7 @@ h2 {
 .dotsp {
     width: 442.5px;
     margin: 0;
+    padding-bottom: 100px;
 }
 .activep, .dotp:hover {
     background-color: #717171;
@@ -322,6 +330,7 @@ h2 {
 .dotsk {
     width: 442.5px;
     margin: 0;
+    padding-bottom: 100px;
 }
 .activek, .dotk:hover {
     background-color: #717171;
@@ -401,16 +410,22 @@ h3 {
     padding-bottom: 70px;
 }
 .button-membership {
-    color: rgb(141, 141, 141);
+    color: white;
     font-size: 40px;    
     margin: 30px 5px;
     padding: 15px 15px;
-    border: 3px solid rgb(141, 141, 141); 
+    border: 3px solid white; 
     min-width: 150px; 
     text-decoration: none;
+    text-shadow: 0px 0px 10px #000,
+				  10px 5px 10px #000,
+				  0px 0px 0 #000,
+				  0px 0px 0 #000;
+    outline: 0.5px solid black;
 }
 .slideshow-containerb {
-    max-width: 500px;
+    max-width: 250px;
+    height: 200px;
     position: relative;
     margin: 0;
     z-index: 950;
@@ -458,7 +473,7 @@ h3 {
     transition: background-color 0.6s ease;
 }
 .dotsb {
-    width: 442.5px;
+    width: 250px;
     margin: 0;
 }
 .activeb, .dotb:hover {
@@ -471,13 +486,15 @@ h3 {
 @keyframes fadeb {
     from {opacity: .4}
     to {opacity: 1}
-}.slideshow-containerpb {
-    max-width: 500px;
+}
+.slideshow-containerpb {
+    max-width: 250px;
+    height: 200px;
     position: relative;
     margin: 0;
     z-index: 950;
 }
-.prevpbb, .nextpb {
+.prevpb, .nextpb {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -520,7 +537,7 @@ h3 {
     transition: background-color 0.6s ease;
 }
 .dotspb {
-    width: 442.5px;
+    width: 250px;
     margin: 0;
 }
 .activepb, .dotpb:hover {
@@ -535,7 +552,8 @@ h3 {
     to {opacity: 1}
 }
 .slideshow-containerkb {
-    max-width: 500px;
+    max-width: 250px;
+    height: 200px;
     position: relative;
     margin: 0;
     z-index: 950;
@@ -583,7 +601,7 @@ h3 {
     transition: background-color 0.6s ease;
 }
 .dotskb {
-    width: 442.5px;
+    width: 250px;
     margin: 0;
 }
 .activekb, .dotkb:hover {
@@ -605,12 +623,61 @@ h3 {
     box-sizing: border-box;
     padding: 0px;
 }
-#book-kakapo-carousel{
-
+#book-kakapo-carousel {
+    padding-left: 100px;
 }
 #book-pukeko-carousel {
-
+    padding-left: 100px;
 }
 #book-kereru-carousel {
-
+    padding-left: 100px;
+}
+#book-kakapo {
+    padding-top: 100px;
+}
+#book-pukeko {
+    padding-top: 100px;
+}
+#book-kereru {
+    padding-top: 100px;
+}
+h4 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    text-shadow: 0px 0px 10px #000,
+				  10px 5px 10px #000,
+				  0px 0px 0 #000,
+				  0px 0px 0 #000;
+}
+ul.bookt li {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    text-shadow: 0px 0px 10px #000,
+				  10px 5px 10px #000,
+				  0px 0px 0 #000,
+				  0px 0px 0 #000;
+    list-style-type: circle center ;
+    list-style-position: inside;
+    text-align: center;
+}
+ul.bookt {
+    padding-left: 0;
+    padding-bottom: 30px;
+}
+.button-main {
+    color: white;
+    font-size: 40px;    
+    margin: 30px 5px;
+    padding: 15px 15px;
+    border: 3px solid white; 
+    min-width: 150px; 
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #000,
+				  10px 5px 10px #000,
+				  0px 0px 0 #000,
+				  0px 0px 0 #000;
+    outline: 0.5px solid black;
 }
