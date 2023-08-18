@@ -471,4 +471,146 @@ h3 {
 @keyframes fadeb {
     from {opacity: .4}
     to {opacity: 1}
+}.slideshow-containerpb {
+    max-width: 500px;
+    position: relative;
+    margin: 0;
+    z-index: 950;
+}
+.prevpbb, .nextpb {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.nextpb {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prevpb {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prevpb:hover, .nextpb:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertextpb {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dotpb {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 1px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dotspb {
+    width: 442.5px;
+    margin: 0;
+}
+.activepb, .dotpb:hover {
+    background-color: #717171;
+}
+.fadepb {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fadepb {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.slideshow-containerkb {
+    max-width: 500px;
+    position: relative;
+    margin: 0;
+    z-index: 950;
+}
+.prevkb, .nextkb {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.nextkb {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prevkb {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prevkb:hover, .nextkb:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertextkb {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dotkb {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 1px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dotskb {
+    width: 442.5px;
+    margin: 0;
+}
+.activekb, .dotkb:hover {
+    background-color: #717171;
+}
+.fadekb {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fadekb {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#book-kakapo,
+#book-pukeko,
+#book-kereru {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px;
+}
+#book-kakapo-carousel{
+
+}
+#book-pukeko-carousel {
+
+}
+#book-kereru-carousel {
+
 }
