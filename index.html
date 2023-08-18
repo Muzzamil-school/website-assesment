@@ -99,12 +99,13 @@
                     dots[slideindex-1].className += " active";
                 }
                 </script>
-
             </section>
             <section id="kakapo-text">
-                <h1>Kakapo Chalet</h1>
+                <section id="kakapo-title">
+                    <h1>Kakapo Chalet</h1>
+                </section>
                 <h2>Nestled in the heart of the alpine wilderness, our Kakapo chalet is a haven of rustic luxury. A cozy fireplace and floor-to-ceiling windows reveal stunning mountain vistas. The gourmet kitchen and spacious deck invite shared moments, while bedrooms offer comfort and style. Recharge in the outdoor hot tub or unwind in the sauna. Ski-in/ski-out convenience ensures adventure at your doorstep, with charming villages nearby. Discover the perfect blend of mountain thrill and relaxation in our enchanting Kakapo chalet.</h2>
-            </section>
+            </section>              
         </div>
     </section>
     <section id="pukeko">
@@ -177,9 +178,10 @@
                 </script>
             </section>
             <section id="pukeko-text">
-                <h1>Pukeko Chalet</h1>
+                <section id="pukeko-title">
+                    <h1>Pukeko Chalet</h1>
+                </section>
                 <h2>Perched slopeside in alpine serenity, our Pukeko chalet blends rustic charm with modern indulgence. Relax by the fireplace while panoramic windows frame nature's grandeur. Gourmet kitchen, luxurious bedrooms, and spa-like amenities provide the ultimate retreat. Ski from your door, explore quaint villages, and savor the perfect mountain escape in our inviting Puekeo chalet.</h2>
-
             </section>
         </div>
     </section>
@@ -252,139 +254,109 @@
                     }
                     </script>
             </section>
-            <section>
-                <h1>Kereru Chalet</h1>
+            <section id="kereru-text">
+                <section id="kereru-title">
+                    <h1>Kereru Chalet</h1>
+                </section>
                 <h2>Welcome to our exquisite Kereru chalet, where alpine beauty meets luxury living. With its rustic yet elegant design, this slopeside retreat offers panoramic mountain views through expansive windows. Indulge in the gourmet kitchen, unwind in cozy bedrooms, and rejuvenate in the private hot tub and sauna. Ski-in/ski-out convenience and nearby village charm make this chalet a gateway to both adventure and relaxation. Experience the pinnacle of mountain living in our captivating Kereru chalet.</h2>
             </section>
         </div>
     </section>
     <section id="book">
-        <div class="parallax-book">  
-            <section>
-                <form action="reservation.php" method="post">
-                    <div class="elem-group">
-                        <label for="name">Your Name</label>
-                        <input
-                        type="text"
-                        id="name"
-                        name="visitor name"
-                        placeholder="Full name"
-                        pattern="[A-Z\sa-z](1,20)"
-                        required
-                        />
-                    </div> 
-                    <div class="elem-group">
-                        <label for="email">Your E-mail</label> 
-                        <input
-                            type="email" 
-                            id="email" 
-                            name="visitor_email" 
-                            placeholder="youremail@email.com"       
-                            required
-                        />
-                    </div> 
-                    <div class="elem-group">
-                        <label for="phone">Your phone</label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="visitor_phone"
-                            placeholder="123-456-7890"
-                            pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
-                            required
-                        />
-                    </div> 
-                    <hr />
-                    <div class="elem-group inlined"> 
-                        <label for="adult ">Adults</label>
-                        <input
-                            type="number"
-                            id="adult"
-                            name="total adults" 
-                            placeholder="how many"
-                            min="1"
-                            required
-                        />
+        <div class="parallax-book">
+            <section id="book-kakapo">
+                <div class="slideshow-containerb">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlidesb fadeb">
+                        <div class="numbertextb">1 / 4</div>
+                        <img src="img/kakapo/bunk_room_thumb.jpg" style="width:100%">
                     </div>
-                    <div class="elem-group inlined">
-                        <label for="child">children</label>
-                        <input
-                            type="number"
-                            id="child"
-                            name="total_children"
-                            placeholder="how many"
-                            min="0"
-                            required
-                        />
-                        <div class="elem-group inlined"> 
-                            <label for="child-age">child(s) age</label>
-                            <input 
-                                type="number" 
-                                id="child" 
-                                name="total children" 
-                                placeholder="age" 
-                                min="0" 
-                                max="12" 
-                                required
-                            />
-                            <div class="elem-group inlined"> 
-                                <label for="child">adult(s) age</label> 
-                                <input 
-                                    type="number" 
-                                    id="child" 
-                                    name="adult_age" 
-                                    placeholder="age"
-                                    min="13"
-                                    max="100" 
-                                    required
-                                />
-                            </div>
-                            <div class="elem-group inlined">                
-                                <label for="checkin-date"> booking date</label>
-                                <input type="date" id="checkin-date" name="checkin-date">
-                            </div> 
-                        </div> 
-                        <div class="elem-group"> 
-                            <label for="room-selection"
-                                >Select where you're gonna jump from</label
-                            >
-                            <select id="room-selection" name="room_preference" required>
-                                <option value="tower">tower</option>
-                                <option value="canyon">canyon</option>
-                                <option value="bridge">bridge</options> 
-                            </select>
-                        </div> 
-                        <hr /> 
+                
+                    <div class="mySlidesb fadeb">
+                        <div class="numbertextb">2 / 4</div>
+                        <img src="img/kakapo/cabin_exterior_thumb.jpg" style="width:100%">
                     </div>
-                    <button type="submit">BOOK NOW</button> 
-                </form>    
-            </section>
+                
+                    <div class="mySlidesb fadeb">
+                        <div class="numbertextb">3 / 4</div>
+                        <img src="img/kakapo/cabin_view_thumb.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlidesb fadeb">
+                        <div class="numbertextb">4 / 4</div>
+                        <img src="img/kakapo/hallway_thumb.jpg" style="width:100%">
+                    </div>
+                
+                <!-- Next and previous buttons -->
+                    <a class="prevb" onclick="plusSlidesb(-1)">&#10094;</a>
+                    <a class="nextb" onclick="plusSlidesb(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div class="dotsb">
+                    <span class="dotb" onclick="currentSlideb(1)"></span>
+                    <span class="dotb" onclick="currentSlideb(2)"></span>
+                    <span class="dotb" onclick="currentSlideb(3)"></span>
+                    <span class="dotb" onclick="currentSlideb(4)"></span>
+                </div>
+                <script>
+                let slideindexb = 1;
+                showSlidesb(slideindexb);
+                
+                // Next/previous controls
+                function plusSlidesb(n) {
+                showSlidesb(slideindexb += n);
+                }
+                
+                // Thumbnail image controls
+                function currentSlideb(n) {
+                showSlidesb(slideindexb = n);
+                }
+                
+                function showSlidesb(n) {
+                    let b;
+                    let slidesb = document.getElementsByClassName("mySlidesb");
+                    let dotsb = document.getElementsByClassName("dotb");
+                    if (n > slidesb.length) {slideindexb = 1}
+                    if (n < 1) {slideindexb = slidesb.length}
+                    for (b = 0; i < slidesb.length; b++) {
+                        slidesb[b].style.display = "none";
+                    }
+                    for (b = 0; b < dotsb.length; b++) {
+                        dotsb[i].className = dotsb[i].className.replace(" activeb", "");
+                    }
+                    slidesb[slideindexb-1].style.display = "block";
+                    dots[slideindexb-1].className += " activeb";
+                }
+                </script>
+            </section> 
+
         </div>
     </section>
     <section id="membership">
         <div class="parallax-membership">  
-            <section>
-                <h2>Welcome to our exclusive Maunga Membership community, where passion for the slopes and a love for refined living converge. As a member, you'll gain privileged access to a world of exceptional benefits and experiences. From priority bookings at our luxurious ski chalet to curated events that celebrate the alpine lifestyle, your membership opens doors to unforgettable moments. Join a community of like-minded enthusiasts who share your appreciation for adventure and relaxation in equal measure. Elevate your mountain experience with our Maunga Membership and embrace a new level of alpine indulgence.</h2>
+            <section id="membership-text">
+                <section id="membership-title">
+                    <h3>Join Our Membership Community</h3>
+                </section>
+                <section id="membership-small">
+                    <h2>Welcome to our exclusive Maunga Membership community, where passion for the slopes and a love for refined living converge. As a member, you'll gain privileged access to a world of exceptional benefits and experiences. From priority bookings at our luxurious ski chalet to curated events that celebrate the alpine lifestyle, your membership opens doors to unforgettable moments. Join a community of like-minded enthusiasts who share your appreciation for adventure and relaxation in equal measure. Elevate your mountain experience with our Maunga Membership and embrace a new level of alpine indulgence.</h2>
+                </section>
+                <a href="02212345678" class="button-membership">Join Today</a>
             </section>
         </div>    
     </section>
     <section id="contact">
         <div class="parallax-contact">
-            <h2>We're here to connect and assist in every way possible. Whether you have inquiries about booking availability, special requests for your stay, or simply want to learn more about our ski chalet and the surrounding area, don't hesitate to get in touch. Our dedicated team is ready to provide you with prompt and personalized responses. Feel free to reach out via the provided contact form, email, or phone number, and we'll ensure your journey to our ski chalet is seamless and filled with anticipation. Your mountain escape starts with a conversation – let's make it a memorable one.</h2>
-            <h3>02212345678</h3>
-            <a href="mailto:customerservice@maungaclub.nz" class="button">Contact Us</a>
+            <section id="contact-text">
+                <h1>Feel Free to Contact Us</h1>
+                <h2>We're here to connect and assist in every way possible. Whether you have inquiries about booking availability, special requests for your stay, or simply want to learn more about our ski chalet and the surrounding area, don't hesitate to get in touch. Our dedicated team is ready to provide you with prompt and personalized responses. Feel free to reach out via the provided email or phone number, and we'll ensure your journey to our ski chalet is seamless and filled with anticipation. Your mountain escape starts with a conversation – let's make it a memorable one.</h2>
+            </section>
+            <a href="mailto:customerservice@maungaclub.nz" class="button">Email</a>
+            <a href="02212345678" class="button">Phone</a>
         </div>     
     </section>
 
 </body>
-
-
-
-
-
-
-
-
-
-
-</html>
+</html
