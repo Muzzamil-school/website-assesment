@@ -25,7 +25,7 @@
             </nav>
         </section>
     </header>
-    <div class="form">
+    <div class="membership-form">
         <section id="form">
             <form action="reservation.php" method="post">
                 <div class="elem-group">
@@ -34,7 +34,7 @@
                     type="text"
                     id="name"
                     name="visitor name"
-                    placeholder="Full Name"
+                    placeholder="Full name"
                     pattern="/^[a-z ,.'-]+$/i"
                     required
                     />
@@ -59,55 +59,9 @@
                         pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
                         required
                     />
-                </div> 
-                <div class="elem-group inlined"> 
-                    <label for="adult">Adults</label>
-                    <input
-                        type="number"
-                        id="adult"
-                        name="total adults" 
-                        placeholder="1-10"
-                        min="1"
-                        max="10"
-                        required
-                    />
                 </div>
-                <div class="elem-group inlined">
-                    <div class="elem-group inlined">
-                        <label for="child">Children</label>
-                        <input
-                            type="number"
-                            id="child"
-                            name="total_children"
-                            placeholder="0-30"
-                            min="0"
-                            max="30"
-                            required
-                        />
-                    </div>
-                    <div class="elem-group inlined">
-                        <div class="elem-group inlined">                
-                            <label for="checkin-date">Checkin date</label>
-                            <input type="date" id="checkin-date" name="checkin-date" required>
-                        </div> 
-                        <div class="elem-group inlined">                
-                            <label for="checkout-date">Checkout date</label>
-                            <input type="date" id="checkout-date" name="checkout-date" required>
-                        </div> 
-                    </div> 
-                    <div class="elem-group"> 
-                        <label for="room-selection">
-                            Select where you would like to stay
-                        </label>
-                        <select id="room-selection" name="room_preference" required>
-                            <option value="kakapo">Kakapo</option>
-                            <option value="pukeko">Pukeko</option>
-                            <option value="kereru">Kereru</option>
-                        </select>
-                    </div>
-                    <button class='button-form' type="submit">BOOK NOW</button> 
-                </div>
-            </form>  
+                <button class='buttonm-form' type="submit">JOIN</button> 
+            </form>    
         </section>
     </div>
 </body>

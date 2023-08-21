@@ -687,3 +687,64 @@ ul.bookt {
 				  0px 0px 0 #000;
     outline: 0.5px solid black;
 }
+#form {
+    padding-top: 100px;
+    text-align: center;
+}
+#name,
+#email,
+#adult,
+#child,
+#phone {
+    width: 150px;
+}
+.form {
+    background: url('img/mountain_view_1.jpg');
+    height: 100vh;
+    width: 100%;
+    color: white;
+    margin: 0;
+    text-shadow: 0px 0px 10px #000,
+				  10px 5px 10px #000,
+				  0px 0px 0 #000,
+				  0px 0px 0 #000;
+}
+.button-form {
+    color: white;
+    font-size: 20px;    
+    margin: 30px 5px;
+    padding: 15px 15px;
+    border: 3px solid white; 
+    min-width: 150px; 
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #000,
+				  10px 5px 10px #000,
+				  0px 0px 0 #000,
+				  0px 0px 0 #000;
+    outline: 0.5px solid black;
+    background: transparent;
+}
+.membership-form {
+    background: url('img/mountain_view_light.jpg');
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+.buttonm-form {
+    color: white;
+    font-size: 20px;    
+    margin: 30px 5px;
+    padding: 15px 15px;
+    border: 3px solid white; 
+    min-width: 100px; 
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #000,
+				  10px 5px 10px #000,
+				  0px 0px 0 #000,
+				  0px 0px 0 #000;
+    outline: 0.5px solid black;
+    background: transparent;
+}
+.elem-group {
+    padding-bottom: 5px;
+}
