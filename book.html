@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
     <title>Maunga Club</title>
 </head>
 <body>
@@ -88,11 +89,48 @@
                     <div class="elem-group inlined">
                         <div class="elem-group inlined">                
                             <label for="checkin-date">Checkin date</label>
-                            <input type="date" id="checkin-date" name="checkin-date" required>
+                            <input 
+                                type="date" 
+                                id="checkin-date" 
+                                name="checkin-date"
+                                required
+                            />
+                            <script>
+                            const validate = dateString => {
+                                const day = (new Date(dateString)).getDay();
+                                if (day==0 || day==1 || day==2 || day==3 || day==4 || day==6) {
+                                    return false;
+                                }
+                                return true;
+                            }
+
+                            // Sets the value to '' in case of an invalid date
+                            document.querySelector('#checkin-date').onchange = evt => {
+                                if (!validate(evt.target.value)) {
+                                    evt.target.value = '';
+                                }
+                            }
+                            </script>
                         </div> 
                         <div class="elem-group inlined">                
                             <label for="checkout-date">Checkout date</label>
-                            <input type="date" id="checkout-date" name="checkout-date" required>
+                            <input type="date" step="" id="checkout-date" name="checkout-date" required>
+                            <script>
+                            const validateo = dateStringo => {
+                                const dayo = (new Date(dateStringo)).getDay();
+                                if (dayo==1 || dayo==2 || dayo==3 || dayo==4 || dayo==5 || dayo==6) {
+                                    return false;
+                                }
+                                return true;
+                            }
+
+                            // Sets the value to '' in case of an invalid date
+                            document.querySelector('#checkout-date').onchange = evt => {
+                                if (!validateo(evt.target.value)) {
+                                    evt.target.value = '';
+                                }
+                            }
+                            </script>
                         </div> 
                     </div> 
                     <div class="elem-group"> 
@@ -105,7 +143,13 @@
                             <option value="kereru">Kereru</option>
                         </select>
                     </div>
-                    <button class='button-form' type="submit">BOOK NOW</button> 
+                    <input type="submit" class="fadeIn fourth" id="submit" onclick="link_data" value="Log In" />
+                    <script>
+                    function link_data() {
+                        // Send data
+                        window.location.href = "bookc.html"; // This will change the page location to main.jsp
+                    }
+                    </script>
                 </div>
             </form>  
         </section>
