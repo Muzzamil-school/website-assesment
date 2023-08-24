@@ -28,7 +28,7 @@
     </header>
     <div class="form">
         <section id="form">
-            <form action="reservation.php" method="post">
+            <form>
                 <div class="elem-group">
                     <label for="name">Your Name</label>
                     <input
@@ -143,12 +143,7 @@
                             <option value="kereru">Kereru</option>
                         </select>
                     </div>
-                    <input type="submit" class="fadeIn fourth" id="submit" onclick="link_data" value="Log In" />
-                    <script>
-                    function link_data() {
-                        // Send data
-                        window.location.href = "bookc.html"; // This will change the page location to main.jsp
-                    }
+                    <a href="bookc.html" class="button">BOOK</a>
                     </script>
                 </div>
             </form>  
